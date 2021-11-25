@@ -40,6 +40,6 @@ The below table shows URLs and responses when testing.
 | URL                                             | Response         |
 |-------------------------------------------------|------------------|
 | http://localhost:8788/foo/                      | 404 - Not Found  |
-| http://localhost:8788/bar/                      | /bar/[[path]].js |
+| http://localhost:8788/bar/                      | /bar/\[\[path\]\].js |
 | https://cloudflare-pages-routing.pages.dev/foo/ | 404 - Not Found  |
-| https://cloudflare-pages-routing.pages.dev/bar/ | /bar/[[path]].js |
+| https://cloudflare-pages-routing.pages.dev/bar/ | /bar/\[\[path\]\].js |
