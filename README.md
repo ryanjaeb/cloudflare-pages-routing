@@ -21,6 +21,8 @@ There is an index page and a 404 page.
 ```
 public
 ├── 404.html
+├── foo
+│   └── index.html
 └── index.html
 ```
 
@@ -37,9 +39,11 @@ npx wrangler pages dev ./public
 
 The below table shows URLs and responses when testing.
 
-| URL                                             | Response           |
-|-------------------------------------------------|--------------------|
-| http://localhost:8788/foo/                      | `404 - Not Found`  |
-| http://localhost:8788/bar/                      | `/bar/[[path]].js` |
-| https://cloudflare-pages-routing.pages.dev/foo/ | `404 - Not Found`  |
-| https://cloudflare-pages-routing.pages.dev/bar/ | `/bar/[[path]].js` |
+| URL                                                       | Response           |
+|-----------------------------------------------------------|--------------------|
+| http://localhost:8788/foo/                                | `/foo/index.html`  |
+| http://localhost:8788/foo/index.html                      | `/foo/[pages].js`  |
+| http://localhost:8788/bar/                                | `/bar/[[path]].js` |
+| https://cloudflare-pages-routing.pages.dev/foo/           | `/foo/index.html`  |
+| https://cloudflare-pages-routing.pages.dev/foo/index.html | `/foo/[pages].js`  |
+| https://cloudflare-pages-routing.pages.dev/bar/           | `/bar/[[path]].js` |
