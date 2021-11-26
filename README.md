@@ -44,6 +44,8 @@ The below table shows URLs and responses when testing.
 | http://localhost:8788/foo/                                | `/foo/index.html`  |
 | http://localhost:8788/foo/index.html                      | `/foo/[pages].js`  |
 | http://localhost:8788/bar/                                | `/bar/[[path]].js` |
+| http://localhost:8788/bar/index.html                      | `/bar/[[path]].js` |
 | https://cloudflare-pages-routing.pages.dev/foo/           | `/foo/index.html`  |
 | https://cloudflare-pages-routing.pages.dev/foo/index.html | `/foo/[pages].js`  |
 | https://cloudflare-pages-routing.pages.dev/bar/           | `/bar/[[path]].js` |
+| https://cloudflare-pages-routing.pages.dev/bar/index.html | `/bar/[[path]].js` |
